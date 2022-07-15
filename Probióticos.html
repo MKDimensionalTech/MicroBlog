@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probióticos</title>
+    <link rel="stylesheet" href="prob.css">
+    <link rel="shortcut icon" href="icons8-virus-dna-16.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="menufechado">
+            <div id="x1"></div>
+            <div id="x2"></div>
+        </div>
+        <div id="menuaberto">
+            <div id="l1"></div>
+            <div id="l2"></div>
+            <div id="l3"></div>
+        </div>
+        <h1>
+            MicroBlog
+        </h1>
+        <p>
+            by Michaela Galbiati
+        </p>
+    </header>
+    <main>
+        <div id="menuoficial">
+            <ul>
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <a href="Probióticos.html">
+                    <li>Probióticos</li>
+                </a>
+                <a href="Vacinas.html">
+                    <li>Vacinas</li>
+                </a>
+                <a href="">
+                    <li>Lavagem correta das mãos</li>
+                </a>
+                <a href="Sindromedeburnout.html">
+                    <li>Síndrome de Burnout</li>
+                </a>
+                <a href="Antibiótico.html">
+                    <li>Antibióticos</li>
+                </a>
+                <a href="Contatos.html">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+        </div>
+        <section id="slide1">
+            <div id="imagem">
+                <img src="pexels-kindel-media-8215110.jpg" alt="">
+            </div>
+            <h2>Probióticos</h2>
+            <div id="primeiro">
+                    <div id="setavoltar">
+                        <div id="seta1"></div>
+                        <div id="seta2"></div>
+                    </div>
+                <h4>De um microrganismo a um produto  que regula a microbiota intestinal, equilibra distúrbios gastrointestinais, previnindo e tratando as doenças. <p><li>Ajudam a controlar a microbiota intestinal; </li>
+                    <li>Atuam na recuperação da microbiota intestinal após o uso de antibiótico;</li>
+                    <li>Fortalecem as atividades gastrointestinais;</li>
+                    <li>Combatem organismos que causam doenças, através de compostos antimicrobianos; </li>
+                    <li>Estimulam o sistema imunológico;</li> 
+                    <li>Promovem o alívio em casos de constipação; </li>
+                    <li>São indicados para lidar com diarreia e outros; </li>
+                    <li>Ajudam na absorção de micronutrientes importantes, como minerais e vitaminas.</li>
+                    </p></h4>
+                    <div id="setaproximo">
+                        <div id="seta3"></div>
+                        <div id="seta4"></div>
+                    </div>
+            </div>
+        </section>
+        <section id="slide2">
+            <div id="imagem">
+                <img src="pexels-kindel-media-8215110.jpg" alt="">
+            </div>
+            <h2>Probióticos</h2>
+            <div id="primeiro">
+                    <div id="setavoltar2">
+        
+                        <div id="seta1"></div>
+                        <div id="seta2"></div>
+                    </div>
+                <h4>
+                    <mark style="color: red;">Microrganismos e Flora Intestinal</mark> <p>Lactobacillus casei<li>Inibindo bactérias nocivas, tratando de diarreia, alergia, reduz o colesterol e glicemia, e doença inflamatória intestinal.</li></p> <p>Lactobacillus acidophilus<li>Trata e previne a diarreia associada ao antibiótico, síndrome do intestino irritável, reduzindo o colesterol, os triglicerídeos e aumentando o HDL.</li></p><P>Streptococcus thermophilus <LI>Reduz episódios de diarreia e sinais associados a má digestão da lactose. Aliviando sintomas da síndrome do intestino irritável.</LI>
+                    </P><p>Bifidobacterium animalis <li>Alivia a constipação intestinal.
+                        Aumenta a sensibilidade à insulina.</li></p>
+                </h4>
+                    <div id="setaproximo2">
+                        <div id="seta3"></div>
+                        <div id="seta4"></div>
+                    </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="@">F</a>
+            <a href="@">W</a>
+            <a href="@">G</a>
+            <a href="@">I</a>
+        </nav>
+    </footer>
+    <script>
+        const slide2 = document.getElementById("slide2");
+        const slide1 = document.getElementById("slide1")
+        const setaproximo = document.getElementById('setaproximo')
+        setaproximo.addEventListener('click',slide22)
+        const setavoltar2 = document.getElementById('setavoltar2')
+        setavoltar2.addEventListener('click',slide11)
+        const primeiro = document.getElementById("primeiro");
+        const menuoficial =document.getElementById("menuoficial")
+        const menuaberto = document.getElementById("menuaberto")
+        menuaberto.addEventListener('click', abrir)
+        const menufechado = document.getElementById("menufechado")
+        menufechado.addEventListener('click', fechar)
+        function abrir(){
+            menuoficial.style.display="block"
+            menufechado.style.display="block"
+            menuoficial.style.visibility="visible"
+            menuoficial.style.position="relative"
+            menufechado.style.visibility="visible"
+            menuaberto.style.visibility="hidden"
+            menuaberto.style.display="none"
+        }
+        function fechar(){
+            menuoficial.style.display="none"
+            menufechado.style.display="none"
+            menuoficial.style.visibility="hidden"
+            menuoficial.style.position="absolute"
+            menufechado.style.visibility="hidden"
+            menuaberto.style.visibility="visible"
+            menuaberto.style.display="block"
+        }
+        function slide22(){
+            slide1.style.visibility="hidden"
+            slide1.style.display="none"
+            slide2.style.visibility="visible"
+            slide2.style.display="block"  
+        }
+        function slide11(){
+            slide1.style.visibility="visible"
+            slide1.style.display="block"
+            slide2.style.visibility="hidden"
+            slide2.style.display="none"  
+        }
+    </script>
+</body>
+</html>

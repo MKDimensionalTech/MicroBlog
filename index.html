@@ -7,38 +7,74 @@
     <title>MicroBlog</title>
     <link rel="shortcut icon" href="icons8-virus-dna-16.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div id="titulo">
             <h1>MicroBlog</h1>
             <p>by Michaela Galbiati</p>
-            <nav>
-                <a id="I" href="@">
-                    Início
-                </a>
-                <a id="P" href="@">
-                    Probióticos
-                </a>
-                <a id="V" href="@">
-                    Vacinas
-                </a>
-                <a id="L" href="@">
-                    Lavagem correta das mãos
-                </a>
-                <a id="S" href="@">
-                    Síndrome de Bournet
-                </a>
-                <a id="A" href="@">
-                    Antibióticos
-                </a>
-                <a id="C" href="@">
-                    Contato
-                </a>
-            </nav>
+            <div id="menu">
+                <div id="div1">
+                    <a href="index.html" target="_blank">Início</a>
+                </div>
+                <div id="div2">
+                    <a href="Probióticos.html" target="_blank">Probióticos</a>
+                </div>
+                <div id="div3">
+                    <a href="Vacinas.html" target="_blank">Vacinas</a>
+                </div>
+                <div id="div4">
+                    <a href="Lavagemcorretamãos.html" target="_blank">Lavagem correta das mãos</a>
+                </div>
+                <div id="div5">
+                    <a href="Sindromedeburnout.html" target="_blank">Síndrome de Burnout</a>
+                </div>
+                <div id="div6">
+                    <a href="Antibiótico.html" target="_blank">Antibióticos</a>
+                </div>
+                <div id="div7" target="_blank"><a href="Contatos.html">Contato</a></div>
+            </div>
+            <div id="menu2">
+                <div id="parte1">
+                    <div id="p11"></div>
+                    <div id="p111"></div>
+                </div>
+                <div id="parte2">
+                    <div id="p22"></div>
+                    <div id="p222"></div>
+                </div>
+            </div>
+            <div id="menu3">
+                <div id="parte3">
+                    <div id="p33"></div>
+                    <div id="p333"></div>
+                </div>
+            </div>
+            <div id="menupequeno">
+                <div>
+                    <a href="index.html">Início</a>
+                </div>
+                <div>
+                    <a href="Probióticos.html">Probióticos</a>
+                </div>
+                <div>
+                    <a href="Vacinas.html">Vacinas</a>
+                </div>
+                <div>
+                    <a href="Lavagemcorretamãos.html">Lavagem correta das mãos</a>
+                </div>
+                <div>
+                    <a href="Sindromedeburnout.html">Síndrome de Burnout</a>
+                </div>
+                <div>
+                    <a href="Antibiótico.html">Antibióticos</a>
+                </div>
+                <div><a href="Contatos.html">Contato</a></div>
+            </div>
         </div>
     </header>
-    <main>
+    <main id="main">
         <section id="Projetos">
             <div id="Probióticos">
                 <h2>
@@ -57,7 +93,7 @@
             </div>
             <div id="Lavagemdasmãos">
                 <h2>
-                    Lavagem correta das mão
+                    Lavagem correta das mãos
                 </h2>
                 <p>Descubra a importância e o passo a passo da lavagem correta das mãos</p>
                 <video height="150px" width="150px" src="production ID_4326791.mp4" autoplay loop muted controls></video>
@@ -97,5 +133,25 @@
             <a href="@">I</a>
         </nav>
     </footer>
+    <script>
+        const menu3=document.getElementById("menu3")
+        menu3.addEventListener("click",fechar)
+        const main=document.getElementById("main");
+        const menupequeno=document.getElementById("menupequeno");
+        const menu2= document.getElementById("menu2");
+        menu2.addEventListener("click",clicar)
+        function clicar(){
+            menupequeno.style.display="block"
+            main.style.display="none"
+            menu3.style.display='block'
+            menu2.style.display='none'
+        }
+        function fechar(){
+            menupequeno.style.display="none"
+            main.style.display="block"
+            menu3.style.display='none'
+            menu2.style.display='block'
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavagem correta das mãos</title>
+    <link rel="stylesheet" href="lavmãos.css">
+    <link rel="shortcut icon" href="icons8-virus-dna-16.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="menufechado">
+            <div id="x1"></div>
+            <div id="x2"></div>
+        </div>
+        <div id="menuaberto">
+            <div id="l1"></div>
+            <div id="l2"></div>
+            <div id="l3"></div>
+        </div>
+        <h1>
+            MicroBlog
+        </h1>
+        <p>
+            by Michaela Galbiati
+        </p>
+    </header>
+    <main>
+        <div id="menuoficial">
+            <ul>
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <a href="Probióticos.html">
+                    <li>Probióticos</li>
+                </a>
+                <a href="Vacinas.html">
+                    <li>Vacinas</li>
+                </a>
+                <a href="Lavagemcorretamãos.html">
+                    <li>Lavagem correta das mãos</li>
+                </a>
+                <a href="Sindromedeburnout.html">
+                    <li>Síndrome de Burnout</li>
+                </a>
+                <a href="Antibiótico.html">
+                    <li>Antibióticos</li>
+                </a>
+                <a href="Contatos.html">
+                    <li>Contatos</li>
+                </a>
+            </ul>
+        </div>
+        <section id="slide1">
+            <div id="imagem">
+                <img src="pexels-ron-lach-9145340.jpg" alt="">
+            </div>
+            <h2>Lavagem correta das mãos</h2>
+            <div id="primeiro">
+                    <div id="setavoltar">
+                        <div id="seta1"></div>
+                        <div id="seta2"></div>
+                    </div>
+                <h4> <p style="background-color: #11D975; border-radius: 30px 30px; padding:5px">  Lavando corretamente as mãos </p><video loop autoplay controls muted src="production ID_4002685.mp4"></video></h4>
+                    <div id="setaproximo">
+                        <div id="seta3"></div>
+                        <div id="seta4"></div>
+                    </div>
+            </div>
+        </section>
+        <section id="slide2">
+            <div id="imagem">
+                <img src="pexels-ron-lach-9145340.jpg" alt="">
+            </div>
+            <h2>Lavagem correta das mãos</h2>
+            <div id="primeiro">
+                    <div id="setavoltar2">
+                        <div id="seta1"></div>
+                        <div id="seta2"></div>
+                    </div>
+                <h4> <p style="background-color: #11D975; border-radius: 30px 30px; padding:5px">Passo-a-passo</p>
+                    <img id="imagempeq"
+                    src="como-lavar-as-maos_23-2148490784.webp" alt="">
+                </h4>
+                    <div id="setaproximo2">
+                        <div id="seta3"></div>
+                        <div id="seta4"></div>
+                    </div>
+            </div>
+        </section>
+        <section id="imagemampliada">
+            <div id="imggrande">
+                <div id="fechaimagem">
+                    <div id="x1"></div>
+                    <div id="x2"></div>
+                </div><img src="como-lavar-as-maos_23-2148490784.webp" alt=""></div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <a href="@">F</a>
+            <a href="@">W</a>
+            <a href="@">G</a>
+            <a href="@">I</a>
+        </nav>
+    </footer>
+    <script>
+        const imagemampliada = document.getElementById('imagemampliada')
+        const fechaimagem = document.getElementById("fechaimagem")
+        fechaimagem.addEventListener("click", diminui)
+        const imagempeq =document.getElementById("imagempeq");
+        imagempeq.addEventListener("mouseenter", ampliar)
+        imagempeq.addEventListener("click", ampliar2)
+        const slide2 = document.getElementById("slide2");
+        const slide1 = document.getElementById("slide1")
+        const setaproximo = document.getElementById('setaproximo')
+        setaproximo.addEventListener('click',slide22)
+        const setavoltar2 = document.getElementById('setavoltar2')
+        setavoltar2.addEventListener('click',slide11)
+        const setaproximo2 = document.getElementById('setaproximo2')
+        const primeiro = document.getElementById("primeiro");
+        const menuoficial =document.getElementById("menuoficial")
+        const menuaberto = document.getElementById("menuaberto")
+        menuaberto.addEventListener('click', abrir)
+        const menufechado = document.getElementById("menufechado")
+        menufechado.addEventListener('click', fechar)
+        function abrir(){
+            menuoficial.style.display="block"
+            menufechado.style.display="block"
+            menuoficial.style.visibility="visible"
+            menuoficial.style.position="relative"
+            menufechado.style.visibility="visible"
+            menuaberto.style.visibility="hidden"
+            menuaberto.style.display="none"
+        }
+        function fechar(){
+            menuoficial.style.display="none"
+            menufechado.style.display="none"
+            menuoficial.style.visibility="hidden"
+            menuoficial.style.position="absolute"
+            menufechado.style.visibility="hidden"
+            menuaberto.style.visibility="visible"
+            menuaberto.style.display="block"
+        }
+        function slide22(){
+            slide1.style.visibility="hidden"
+            slide1.style.display="none"
+            slide2.style.visibility="visible"
+            slide2.style.display="block"  
+        }
+        function slide11(){
+            slide1.style.visibility="visible"
+            slide1.style.display="block"
+            slide2.style.visibility="hidden"
+            slide2.style.display="none"  
+        }
+        function ampliar(){
+            slide2.style.visibility="hidden"
+            slide2.style.display="none"
+            imagemampliada.style.display="block"
+            imagemampliada.style.visibility="visible"
+        }
+        function ampliar2(){
+            slide2.style.visibility="hidden"
+            slide2.style.display="none"
+            imagemampliada.style.display="block"
+            imagemampliada.style.visibility="visible"
+        }
+        function diminui(){
+            slide2.style.visibility="visible"
+            slide2.style.display="block"
+            imagemampliada.style.display="none"
+            imagemampliada.style.visibility="hidden"
+        }
+        
+    </script>
+</body>
+</html>
