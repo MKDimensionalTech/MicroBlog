@@ -68,6 +68,10 @@ div#titulo> img{
 div#menu2{
     display:none;
 }
+div#menupequeno{
+    display: none;
+    visibility: hidden;
+}
 div#menupequeno>div>div>a{
     text-decoration: none;
     display: none;
@@ -312,7 +316,8 @@ section#Projetos> div#Antibióticos> video{
         }
     }
     div#menupequeno{
-        display: none;
+        display: block;
+        visibility: visible;
         margin: auto;
         margin-top: 20px;
         background-color:black;
