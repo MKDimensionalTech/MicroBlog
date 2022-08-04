@@ -307,7 +307,7 @@ div#fechaimagem>div#x2{
 }
 @media (max-width:600px) {
     section#slide1>div#primeiro>h4>video{
-        max-width: 300px;
+        max-width: 260px;
         height: 240px;
     }
     section#slide1>div#primeiro>h4{

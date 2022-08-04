@@ -316,7 +316,7 @@ section#Projetos> div#Antibióticos> video{
         }
     }
     div#menupequeno{
-        display: block;
+        display: none;
         visibility: visible;
         margin: auto;
         margin-top: 20px;
